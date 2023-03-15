@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.3.204:3306/store?servierTimezone=UTC
+    username: root
+    password: pass*2020
+  jackson:
+    default-property-inclusion: NON_NULL
+  web:
+    resources:
+      static-locations: classpath:static
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+server:
+  port: 1010
