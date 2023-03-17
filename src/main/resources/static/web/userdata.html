@@ -141,7 +141,7 @@
 							<div class="form-group">
 								<label class="col-md-2 control-label">用户名：</label>
 								<div class="col-md-8">
-									<input id="username" type="text" class="form-control" value="孙悟空" readonly="readonly">
+									<input id="username" type="text" class="form-control" value="" readonly="readonly">
 								</div>
 							</div>
 							<div class="form-group">
@@ -281,6 +281,7 @@
 							$("#email").val(json.data.email);
 
 							let radio = json.data.gender == 0 ? $("#gender-female") : $("#gender-male");
+							//prop给某个元素添加属性及属性值
 							radio.prop("checked", "checked");
 						} else {
 							alert("获取用户信息失败！" + json.message);
@@ -297,10 +298,11 @@
 					dataType: "json",
 					success: function(json) {
 						if (json.state == 200) {
-							alert("修改成功！");
-							location.href = "login.html";
+							alert("修改成功");
 						} else {
 							alert("修改失败！" + json.message);
+							location.href = "userdata.html";
+
 						}
 					},
 					error: function(xhr) {

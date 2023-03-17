@@ -28,6 +28,21 @@ public interface UserMapper {
     User findByUsername(String username);
 
     /**
+     * 根据id修改密码
+     * @param uid
+     * @param password
+     * @param modifiedUser
+     * @param modifiedTime
+     * @return
+     */
+
+    Integer updatePasswordByUid(
+            @Param("uid") Integer uid,
+            @Param("password") String password,
+            @Param("modifiedUser") String modifiedUser,
+            @Param("modifiedTime") Date modifiedTime);
+
+    /**
      * 根据用户id查询用户数据
      * @param uid 用户id
      * @return 匹配的用户数据，如果没有匹配的用户数据，则返回null
@@ -35,13 +50,10 @@ public interface UserMapper {
     User findByUid(Integer uid);
 
     /**
-     * 根据uid更新用户的密码
-     * @param uid 用户的id
-     * @param password 新密码
-     * @param modifiedUser 最后修改执行人
-     * @param modifiedTime 最后修改时间
+     * 根据uid更新用户资料
+     * @param user 封装了用户id和新个人资料的对象
      * @return 受影响的行数
      */
-    Integer updatePasswordByUid(Integer uid,String password,String modifiedUser,Date modifiedTime);
+    Integer updateInfoByUid(User user);
 
 }

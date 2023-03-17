@@ -14,3 +14,6 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
 server:
   port: 1010
+user:
+  address:
+    max-count: 20

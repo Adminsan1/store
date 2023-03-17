@@ -31,12 +31,7 @@
             username = #{username}
     </select>
 
-    <!-- 根据uid更新用户的密码：
-	     Integer updatePasswordByUid(
-		    @Param("uid") Integer uid,
-		    @Param("password") String password,
-		    @Param("modifiedUser") String modifiedUser,
-		    @Param("modifiedTime") Date modifiedTime) -->
+    <!-- 根据uid更新用户的密码 -->
     <update id="updatePasswordByUid">
         UPDATE
             t_user
@@ -58,7 +53,6 @@
             uid = #{uid}
     </select>
 
-    <!-- 根据uid更新用户个人资料：Integer updateInfoByUid(User user) -->
     <update id="updateInfoByUid">
         UPDATE
         t_user
@@ -72,20 +66,4 @@
         uid = #{uid}
     </update>
 
-    <!-- 根据uid更新用户的头像
-	     Integer updateAvatarByUid(
-		    @Param("uid") Integer uid,
-		    @Param("avatar") String avatar,
-		    @Param("modifiedUser") String modifiedUser,
-		    @Param("modifiedTime") Date modifiedTime) -->
-    <update id="updateAvatarByUid">
-        UPDATE
-            t_user
-        SET
-            avatar = #{avatar},
-            modified_user = #{modifiedUser},
-            modified_time = #{modifiedTime}
-        WHERE
-            uid = #{uid}
-    </update>
 </mapper>
