@@ -32,7 +32,7 @@ public class AddressServiceTests {
     }
     @Test
     public void getByUid() {
-        Integer uid = 26;
+        Integer uid = 2;
         List<Address> list = addressService.getByUid(uid);
         System.out.println("count=" + list.size());
         for (Address item : list) {

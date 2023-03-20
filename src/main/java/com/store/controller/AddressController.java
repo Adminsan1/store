@@ -27,7 +27,7 @@ public class AddressController extends BaseController {
         // 调用业务对象的方法执行业务
         addressService.addNewAddress(uid, username, address);
         // 响应成功
-        return new JsonResult(OK);
+        return new JsonResult<>(OK);
     }
 
     @GetMapping({"", "/"})

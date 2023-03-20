@@ -29,7 +29,7 @@ public class ProductServiceImpl implements IProductService {
     }
 
     @Override
-    public Product findByid(Integer id) {
+    public Product findById(Integer id) {
         // 根据参数id调用私有方法执行查询，获取商品数据
         Product product = productMapper.findById(id);
         // 判断查询结果是否为null

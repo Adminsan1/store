@@ -1,0 +1,48 @@
+2023-03-20 12:03:31.934  INFO 3092 --- [main] com.store.CartServiceTests               : Starting CartServiceTests using Java 1.8.0_131 on DESKTOP-5ET78UH with PID 3092 (started by 32153 in D:\store)
+2023-03-20 12:03:31.939  INFO 3092 --- [main] com.store.CartServiceTests               : No active profile set, falling back to default profiles: default
+2023-03-20 12:03:36.259  INFO 3092 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-03-20 12:03:36.620  INFO 3092 --- [main] com.store.CartServiceTests               : Started CartServiceTests in 5.472 seconds (JVM running for 7.45)
+2023-03-20 12:03:36.622  INFO 3092 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2023-03-20 12:03:36.625  INFO 3092 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2023-03-20 12:03:37.231  INFO 3092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-20 12:03:38.663  INFO 3092 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-20 12:06:09.765  INFO 10812 --- [main] com.store.CartServiceTests               : Starting CartServiceTests using Java 1.8.0_131 on DESKTOP-5ET78UH with PID 10812 (started by 32153 in D:\store)
+2023-03-20 12:06:09.771  INFO 10812 --- [main] com.store.CartServiceTests               : No active profile set, falling back to default profiles: default
+2023-03-20 12:06:12.603  INFO 10812 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-03-20 12:06:13.042  INFO 10812 --- [main] com.store.CartServiceTests               : Started CartServiceTests in 3.929 seconds (JVM running for 5.585)
+2023-03-20 12:06:13.044  INFO 10812 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2023-03-20 12:06:13.046  INFO 10812 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2023-03-20 12:06:13.358  INFO 10812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-20 12:06:14.468  INFO 10812 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-20 12:06:56.976  INFO 11852 --- [main] com.store.CartMapperTests                : Starting CartMapperTests using Java 1.8.0_131 on DESKTOP-5ET78UH with PID 11852 (started by 32153 in D:\store)
+2023-03-20 12:06:56.980  INFO 11852 --- [main] com.store.CartMapperTests                : No active profile set, falling back to default profiles: default
+2023-03-20 12:06:59.546  INFO 11852 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-03-20 12:06:59.885  INFO 11852 --- [main] com.store.CartMapperTests                : Started CartMapperTests in 3.54 seconds (JVM running for 5.741)
+2023-03-20 12:06:59.887  INFO 11852 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2023-03-20 12:06:59.889  INFO 11852 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2023-03-20 12:07:00.203  INFO 11852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-20 12:07:01.130  INFO 11852 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-20 12:07:16.492  INFO 11624 --- [main] com.store.CartMapperTests                : Starting CartMapperTests using Java 1.8.0_131 on DESKTOP-5ET78UH with PID 11624 (started by 32153 in D:\store)
+2023-03-20 12:07:16.496  INFO 11624 --- [main] com.store.CartMapperTests                : No active profile set, falling back to default profiles: default
+2023-03-20 12:07:19.252  INFO 11624 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-03-20 12:07:19.633  INFO 11624 --- [main] com.store.CartMapperTests                : Started CartMapperTests in 3.732 seconds (JVM running for 5.314)
+2023-03-20 12:07:19.635  INFO 11624 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2023-03-20 12:07:19.637  INFO 11624 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2023-03-20 12:07:19.927  INFO 11624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-20 12:07:20.862  INFO 11624 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-20 12:07:57.591  INFO 17376 --- [main] com.store.CartMapperTests                : Starting CartMapperTests using Java 1.8.0_131 on DESKTOP-5ET78UH with PID 17376 (started by 32153 in D:\store)
+2023-03-20 12:07:57.596  INFO 17376 --- [main] com.store.CartMapperTests                : No active profile set, falling back to default profiles: default
+2023-03-20 12:08:00.710  INFO 17376 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-03-20 12:08:01.301  INFO 17376 --- [main] com.store.CartMapperTests                : Started CartMapperTests in 4.426 seconds (JVM running for 6.489)
+2023-03-20 12:08:01.303  INFO 17376 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2023-03-20 12:08:01.306  INFO 17376 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2023-03-20 12:08:01.685  INFO 17376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-20 12:08:02.662  INFO 17376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-20 12:09:10.114  INFO 5928 --- [main] com.store.CartMapperTests                : Starting CartMapperTests using Java 1.8.0_131 on DESKTOP-5ET78UH with PID 5928 (started by 32153 in D:\store)
+2023-03-20 12:09:10.117  INFO 5928 --- [main] com.store.CartMapperTests                : No active profile set, falling back to default profiles: default
+2023-03-20 12:09:12.759  INFO 5928 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-03-20 12:09:13.102  INFO 5928 --- [main] com.store.CartMapperTests                : Started CartMapperTests in 3.564 seconds (JVM running for 5.863)
+2023-03-20 12:09:13.103  INFO 5928 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2023-03-20 12:09:13.106  INFO 5928 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2023-03-20 12:09:13.402  INFO 5928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-20 12:09:14.336  INFO 5928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

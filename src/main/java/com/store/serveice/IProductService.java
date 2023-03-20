@@ -13,5 +13,6 @@ public interface IProductService {
      */
     List<Product> findHotList();
 
-    Product findByid(Integer id);
+    Product findById(Integer id);
+
 }

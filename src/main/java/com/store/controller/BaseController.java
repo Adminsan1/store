@@ -34,10 +34,6 @@ public class BaseController {
     protected final String getUsernameFromSession(HttpSession session) {
         return session.getAttribute("username").toString();
     }
-
-    protected final Integer getuidFromSession(HttpSession session) {
-        return Integer.valueOf(session.getAttribute("uid").toString());
-    }
     /**
      * @ExceptionHandler用于统一处理方法抛出的异常
      */
@@ -62,7 +58,8 @@ public class BaseController {
             result.setState(5002);
         }else if (e instanceof ProductNotFoundException) {
             result.setState(4006);
-            result.setMessage("");
+        }else if (e instanceof CartNotFoundException) {
+            result.setState(4007);
         }
         return result;
     }

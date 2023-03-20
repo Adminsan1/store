@@ -1,11 +1,13 @@
 package com.store.serveice;
 
+import com.store.entity.User;
+import com.store.vo.CartVo;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * 处理商品数据的业务层接口
- * @author 32153
- */
+import java.util.List;
+
+/** 处理商品数据的业务层接口
+ * @author 32153*/
 @Transactional
 public interface ICartService {
     /**
@@ -16,4 +18,10 @@ public interface ICartService {
      * @param username 当前登录的用户名
      */
     void addToCart(Integer uid, Integer pid, Integer amount, String username);
+
+    List<CartVo> findVoByUid(Integer uid);
+
+    Integer addNum(Integer cid,Integer uid,String username);
+
+    List<CartVo> getVOByCid(Integer uid,Integer[] cids);
 }

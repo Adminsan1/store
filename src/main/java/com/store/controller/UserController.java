@@ -46,7 +46,7 @@ public class UserController extends BaseController {
 
     @RequestMapping("update")
     public JsonResult<Void> update(String oldPassword, String newPassword, HttpSession session) {
-        Integer integer = getuidFromSession(session);
+        Integer integer = getUidFromSession(session);
         String username = getUsernameFromSession(session);
         userService.changePassword(integer, username, oldPassword, newPassword);
         return new JsonResult<Void>(OK);
