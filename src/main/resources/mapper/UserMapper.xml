@@ -5,52 +5,51 @@
 
 <mapper namespace="com.store.mapper.UserMapper">
     <resultMap id="UserEntityMap" type="com.store.entity.User">
-        <id column="uid" property="uid"/>
-        <result column="is_delete" property="isDelete"/>
-        <result column="created_user" property="createdUser"/>
-        <result column="created_time" property="createdTime"/>
-        <result column="modified_user" property="modifiedUser"/>
-        <result column="modified_time" property="modifiedTime"/>
+        <id property="uid" column="uid" jdbcType="INTEGER"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="CHAR"/>
+        <result property="salt" column="salt" jdbcType="CHAR"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="gender" column="gender" jdbcType="INTEGER"/>
+        <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+        <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+        <result property="createdUser" column="created_user" jdbcType="VARCHAR"/>
+        <result property="createdTime" column="created_time" jdbcType="TIMESTAMP"/>
+        <result property="modifiedUser" column="modified_user" jdbcType="VARCHAR"/>
+        <result property="modifiedTime" column="modified_time" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <!-- 插入用户数据：Integer insert(User user) -->
     <insert id="insert">
-        INSERT INTO
-            t_user (username, password, salt, phone, email, gender, avatar, is_delete, created_user, created_time, modified_user, modified_time)
-        VALUES
-        (#{username}, #{password}, #{salt}, #{phone}, #{email}, #{gender}, #{avatar}, #{isDelete}, #{createdUser}, #{createdTime}, #{modifiedUser}, #{modifiedTime})
+        INSERT INTO t_user (username, password, salt, phone, email, gender, avatar, is_delete, created_user,
+                            created_time, modified_user, modified_time)
+        VALUES (#{username}, #{password}, #{salt}, #{phone}, #{email}, #{gender}, #{avatar}, #{isDelete},
+                #{createdUser}, #{createdTime}, #{modifiedUser}, #{modifiedTime})
     </insert>
 
     <!-- 根据用户名查询用户数据：User findByUsername(String username) -->
     <select id="findByUsername" resultMap="UserEntityMap">
-        SELECT
-            *
-        FROM
-            t_user
-        WHERE
-            username = #{username}
+        SELECT *
+        FROM t_user
+        WHERE username = #{username}
     </select>
 
     <!-- 根据uid更新用户的密码 -->
     <update id="updatePasswordByUid">
         UPDATE
             t_user
-        SET
-            password = #{password},
+        SET password      = #{password},
             modified_user = #{modifiedUser},
             modified_time = #{modifiedTime}
-        WHERE
-            uid = #{uid}
+        WHERE uid = #{uid}
     </update>
 
     <!-- 根据用户id查询用户数据：User findByUid(Integer uid) -->
     <select id="findByUid" resultMap="UserEntityMap">
-        SELECT
-            *
-        FROM
-            t_user
-        WHERE
-            uid = #{uid}
+        SELECT *
+        FROM t_user
+        WHERE uid = #{uid}
     </select>
 
     <update id="updateInfoByUid">
@@ -64,6 +63,13 @@
         modified_time = #{modifiedTime}
         WHERE
         uid = #{uid}
+    </update>
+    <update id="updateAvatarByUid">
+        update t_user
+        set avatar=#{avatar},
+            modified_user=#{modifiedUser},
+            modified_time=#{modifiedTime}
+        where uid = #{uid}
     </update>
 
 </mapper>

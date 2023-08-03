@@ -4,6 +4,9 @@ spring:
     url: jdbc:mysql://192.168.3.204:3306/store?servierTimezone=UTC
     username: root
     password: pass*2020
+logging:
+  level:
+    com.javagirl.yomall: debug
   jackson:
     default-property-inclusion: NON_NULL
   web:

@@ -48,18 +48,28 @@ public class BaseController {
             result.setState(5002);
         } else if (e instanceof UpdateException) {
             result.setState(5003);
-        }else if (e instanceof AddressCountLimitException) {
+        } else if (e instanceof AddressCountLimitException) {
             result.setState(4003);
-        }else if (e instanceof AddressNotFoundException) {
+        } else if (e instanceof AddressNotFoundException) {
             result.setState(4004);
         } else if (e instanceof AccessDeniedException) {
             result.setState(4005);
-        }else if (e instanceof DeleteException) {
+        } else if (e instanceof DeleteException) {
             result.setState(5002);
-        }else if (e instanceof ProductNotFoundException) {
+        } else if (e instanceof ProductNotFoundException) {
             result.setState(4006);
-        }else if (e instanceof CartNotFoundException) {
+        } else if (e instanceof CartNotFoundException) {
             result.setState(4007);
+        } else if (e instanceof FileEmptyException) {
+            result.setState(6001);
+        } else if (e instanceof FileSizeException) {
+            result.setState(6002);
+        } else if (e instanceof FileTypeException) {
+            result.setState(6003);
+        } else if (e instanceof FileUploadIOException) {
+            result.setState(6004);
+        } else if (e instanceof FileStateException) {
+            result.setState(6005);
         }
         return result;
     }
