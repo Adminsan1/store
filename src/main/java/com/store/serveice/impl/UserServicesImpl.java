@@ -99,8 +99,6 @@ public class UserServicesImpl implements IUserService {
     }
 
 
-
-
     @Override
     public void changePassword(Integer uid, String username, String oldPassword, String newPassword) {
         // 调用userMapper的findByUsername()方法，根据参数username查询用户数据
@@ -187,6 +185,19 @@ public class UserServicesImpl implements IUserService {
         if (rows != 1) {
             // 是：抛出UpdateException异常
             throw new UpdateException("更新用户数据时出现未知错误，请联系系统管理员");
+        }
+    }
+
+    @Override
+    public void changeAvatar(Integer uid, String avatar, String username) {
+        //查询当前用户数据是否存在
+        User byUid = userMapper.findByUid(uid);
+        if (byUid == null || byUid.getIsDelete().equals(1)) {
+            throw new UserNotFoundException("查询当前用户数据不存在");
+        }
+        Integer rows = userMapper.updateAvatarByUid(uid,avatar,username,new Date());
+        if (rows != 1) {
+            throw new UpdateException("更新用户头像发生错误");
         }
     }
 

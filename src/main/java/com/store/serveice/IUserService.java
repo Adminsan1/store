@@ -33,7 +33,7 @@ public interface IUserService {
      */
     void changeInfo(Integer uid, String username, User user);
 
-
+    void changeAvatar(Integer uid, String avatar, String username);
 
 
 

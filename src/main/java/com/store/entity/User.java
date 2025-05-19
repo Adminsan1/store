@@ -1,6 +1,7 @@
 package com.store.entity;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.Objects;
 
 /**
@@ -16,6 +17,10 @@ public class User extends BaseEntity implements Serializable {
     private Integer gender;
     private String avatar;
     private Integer isDelete;
+    private String createdUser;
+    private Date createdTime;
+    private String modifiedUser;
+    private Date modifiedTime;
 
     @Override
     public boolean equals(Object o) {
@@ -34,7 +39,7 @@ public class User extends BaseEntity implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), uid, username, password, salt, phone, email, gender, avatar, isDelete);
+        return Objects.hash(super.hashCode(), uid, username, password, salt, phone, email, gender, avatar, isDelete, createdUser, createdTime, modifiedUser, modifiedTime);
     }
 
     @Override
@@ -49,6 +54,10 @@ public class User extends BaseEntity implements Serializable {
                 ", gender=" + gender +
                 ", avatar='" + avatar + '\'' +
                 ", isDelete=" + isDelete +
+                ", createdUser='" + createdUser + '\'' +
+                ", createdTime=" + createdTime +
+                ", modifiedUser='" + modifiedUser + '\'' +
+                ", modifiedTime=" + modifiedTime +
                 '}';
     }
 
@@ -122,5 +131,45 @@ public class User extends BaseEntity implements Serializable {
 
     public void setIsDelete(Integer isDelete) {
         this.isDelete = isDelete;
+    }
+
+    @Override
+    public String getCreatedUser() {
+        return createdUser;
+    }
+
+    @Override
+    public void setCreatedUser(String createdUser) {
+        this.createdUser = createdUser;
+    }
+
+    @Override
+    public Date getCreatedTime() {
+        return createdTime;
+    }
+
+    @Override
+    public void setCreatedTime(Date createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    @Override
+    public String getModifiedUser() {
+        return modifiedUser;
+    }
+
+    @Override
+    public void setModifiedUser(String modifiedUser) {
+        this.modifiedUser = modifiedUser;
+    }
+
+    @Override
+    public Date getModifiedTime() {
+        return modifiedTime;
+    }
+
+    @Override
+    public void setModifiedTime(Date modifiedTime) {
+        this.modifiedTime = modifiedTime;
     }
 }
